@@ -1,0 +1,39 @@
+#message {
+  margin: 0 auto;
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+tr,
+td,
+th {
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: lightgray;
+}
+
+.dice {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.cell {
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+  cursor: default;
+  background-color: gray;
+}
+
+input {
+  margin: 8px;
+}

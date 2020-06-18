@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yahtzee</title>
+    <script type="text/javascript" src="Yahtzee.js"></script>
+    <link rel="stylesheet" type="text/css" href="Yahtzee.css">
+</head>
+
+<body>
+    <h3 id="message">PRESS ROLL TO BEGIN</h3>
+
+    Total Score: <span id="totalScore">0</span>
+
+    <br />
+    <br />
+
+    <span id="0" class="dice">0</span>
+    <span id="1" class="dice">0</span>
+    <span id="2" class="dice">0</span>
+    <span id="3" class="dice">0</span>
+    <span id="4" class="dice">0</span>
+
+    <button id="roll">Roll</button>
+    Rolls Left: <span id="rollsLeft">3</span>
+
+    <!-- <button id="newGame">New Game</button> -->
+
+    <br />
+    <br />
+
+    <input type="checkbox" id="hold0">
+    <input type="checkbox" id="hold1">
+    <input type="checkbox" id="hold2">
+    <input type="checkbox" id="hold3">
+    <input type="checkbox" id="hold4">
+    Hold Dice
+
+    <br />
+    <br />
+
+    <table id="yahtzeeTable">
+        <tr>
+            <th>Category</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td id="fives" class="cell">Fives</td>
+            <td id="fivesScore" class="score">-</td>
+        </tr>
+        <tr>
+            <td id="onePair" class="cell">One Pair</td>
+            <td id="onePairScore" class="score">-</td>
+        </tr>
+        <tr>
+            <td id="chance" class="cell">Chance</td>
+            <td id="chanceScore" class="score">-</td>
+        </tr>
+    </table>
+</body>
+
+</html>
