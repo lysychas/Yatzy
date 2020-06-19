@@ -10,7 +10,7 @@ function Yahtzee() {
     { currentValue: document.getElementById("3"), hold: false },
     { currentValue: document.getElementById("4"), hold: false },
   ];
-  let upperSecAccumulator = 0;
+  let upperSectionAccumulator = 0;
   let totalScoreElement = document.getElementById("totalScore");
 
   const totalScore = (value) => {
@@ -100,7 +100,7 @@ function Yahtzee() {
   const upperSectionScore = (name, value) => () => {
     if (rolls > 0) {
       let upperScore = upperSectionCount(value);
-      upperSecAccumulator += upperScore;
+      upperSectionAccumulator += upperScore;
       inputScoreToCell(name, upperScore);
     }
   };
